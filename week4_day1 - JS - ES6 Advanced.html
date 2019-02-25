@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>JS</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+
+		<h1>JS | ES6 Advanced</h1>
+
+		<script>
+
+
+		/*
+				// Classes and inheritance
+
+				class Person {
+
+					constructor(val1, val2, val3){
+						this.firstName 	= val1;
+						this.surname   	= val2;
+						this.age				= val3;
+					}
+				}
+
+
+				class Player extends Person {
+
+					constructor(val1, val2, val3, val4){
+						super(val1, val2, val3)
+						this.points = val4
+					}
+				}
+
+
+				class Witch extends Player {
+
+					constructor(val1, val2, val3, val4){
+						super(val1, val2, val3, val4)
+						this.role			= 'bruja'
+					}
+
+					lanzarHechizo(){
+						console.log("La bruja " + this.firstName + " te lanzó un hechizo!")
+					}
+				}
+
+
+				class Elf extends Player {
+
+					constructor(val1, val2, val3, val4){
+						super(val1, val2, val3, val4)
+						this.role			= 'elfo'
+					}
+
+					escupir(){
+						console.log("El elfo " + this.firstName + " te escupió! Menudo guarro...")
+					}
+				}
+
+
+
+				var onlyPerson = new Person('Germán', 'Álvarez', 32)
+				console.log(onlyPerson.firstName + ' tiene ' + onlyPerson.age + ' años ')
+
+				var onlyPlayer = new Player('Sara', 'Díaz', 16, 2000)
+				console.log(onlyPlayer.firstName + ' tiene ' + onlyPlayer.points + ' puntos ')
+
+				var bruja = new Witch('Piruja', 'Ruiz', 97, 2000)
+				bruja.lanzarHechizo()
+
+				var elfo = new Elf('John', 'Doe', 30, 2000)
+				elfo.escupir()
+		*/
+
+
+
+
+
+
+
+		/*
+
+
+		// Arrow function (example 0 - returning arrow functions with a single statement do not need the 'return' word)
+		const getRest = (val1, val2) => val1 % val2
+		console.log(getRest(10, 3))
+
+
+
+
+
+		// Arrow function (example 1 - only one parameter? no parenthesis needed)
+		const isEven = val => if (val % 2 === 0) true
+		console.log(isEven(2))
+
+		// Improved version (no conditional needed when returning a comparison result!)
+		const isEven = val => val % 2 === 0;
+		console.log(isEven(2))
+
+
+		
+
+
+
+		// Arrow function (example 2 - more tran one paramneter? use parenthesis)
+		const add = (val1, val2) => val1 + val2
+		console.log(add(2, 4))
+
+
+
+
+
+
+		// Arrow function (example 3 - more than one statement inside the function? use curly braces)
+		const getResult = (val1, val2) => {
+			const fixed = .9;
+			return (val1 + val2) * fixed
+		}
+		console.log(getResult(2, 4))
+
+
+
+
+
+		// Arrow function (example 4 - arrow functions do not switch context: 'this' refers to the object, not to window)
+		class Counter {
+		  constructor() {
+		    this.count = 1;
+		  }
+
+		  countUp() {
+		    setInterval(() => {
+		      console.log(this.count++); // <-- Yay! No .bind() method needed! SO HOT!
+		    }, 1000);
+		  }
+		}
+
+		const myCounter = new Counter();
+		myCounter.countUp();
+
+
+
+
+
+
+		// Arrow function (example 5 - super clean code)
+		const drinksHQ = ['Coca-cola', 'Sprite', 'Cacaolat', 'Rebull']
+		drinksHQ.forEach( drink => console.log(drink) )
+
+
+
+
+
+		// Arrow function (example 6 - super clean code)
+		const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+		const evens = numbers.filter(singleNumber => singleNumber % 2 === 0);
+		console.log(evens);
+
+
+
+
+
+		// Arrow function (example 7 - super clean code)
+		window.onmousemove = e => console.log(e.x)
+
+
+		*/
+
+
+
+
+		/*
+
+		// Default parameters
+		const getFullPrice = (subtotal, discount = 0) => (subtotal - discount) * 1.21
+
+		console.log(getFullPrice(110, 10))
+		console.log(getFullPrice(1200, 40))
+		console.log(getFullPrice(1200))		// second parameter no needed, set to default 0
+
+		*/
+
+
+		
+
+		</script>
+
+	</body>
+</html>
